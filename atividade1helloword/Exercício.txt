@@ -1,0 +1,3 @@
+Atividade  1 Spring-boot (minha primeira aplicação): Crie uma aplicação spring de hello world.
+
+A aplicação deverá conter um end-point que retorna uma string com as habilidades e mentalidades que você utilizou para realizar essa atividade.
