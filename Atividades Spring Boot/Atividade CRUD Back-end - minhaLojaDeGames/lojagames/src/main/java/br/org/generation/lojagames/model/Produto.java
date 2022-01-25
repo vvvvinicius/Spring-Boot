@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
@@ -42,7 +43,7 @@ public class Produto{
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataLancamento;
 		
-	@NotBlank(message = "O valor do jogo é obrigatório!")
+	@NotNull(message = "O valor do jogo é obrigatório!")
 	private BigDecimal preco;
 	
 	@ManyToOne
