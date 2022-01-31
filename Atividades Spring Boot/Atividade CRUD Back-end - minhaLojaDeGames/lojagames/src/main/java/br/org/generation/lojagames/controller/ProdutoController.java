@@ -33,11 +33,11 @@ public class ProdutoController {
 	@Autowired
 	private CategoriaRepository categoriaRepository;
 	
-	@GetMapping
+	@GetMapping("/listar")
 	public ResponseEntity <List<Produto>> getAll(){
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
-	
+		
 	@GetMapping("/{id}")
 	public ResponseEntity <Produto> GetById(@PathVariable Long id){
 		return produtoRepository.findById(id)
